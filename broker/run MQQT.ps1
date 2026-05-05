@@ -1,11 +1,7 @@
-version: '3'
 
-services:
-  mosquitto:
-    image: eclipse-mosquitto:2
-    container_name: mqtt-broker
-    ports:
-      - "1883:1883"
-      - "9001:9001"
-    volumes:
-      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\WINDOWS\system32> cd "C:\Program Files\mosquitto"
+PS C:\Program Files\mosquitto> .\mosquitto_sub.exe -t "university/test"
